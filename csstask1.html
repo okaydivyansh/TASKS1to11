@@ -21,13 +21,36 @@
         }
 
         table {
-            width: 50%;
+            width: 55%;
         }
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+        width: 500px;
+        margin: 10px auto;
+    }
+
+    .grid-item {
+        border: 2px solid lightgreen;
+        height: 100px;
+        width: 100px;
+    }
+    #grid1, #grid2, #grid4, #grid5, #grid8{
+        border-radius: 5px;
+    }
+    #grid3, #grid9{
+        border-radius: 20px;
+    }
+    #grid7{
+        border-radius: 50%;
+    }
     </style>
 </head>
 
 <body>
-
+<div>
     <table>
         <tr>
             <th>Firstname</th>
@@ -50,6 +73,17 @@
             <td>80</td>
         </tr>
     </table>
-</body>
+</div>
 
-</html>
+<div class="grid-container">
+    <div id="grid1" class="grid-item"></div>
+    <div id="grid2" class="grid-item"></div>
+    <div id="grid3" class="grid-item"></div>
+    <div id="grid4" class="grid-item"></div>
+    <div id="grid5" class="grid-item"></div>
+    <div id="grid6" class="grid-item"></div>
+    <div id="grid7" class="grid-item"></div>
+    <div id="grid8" class="grid-item"></div>
+    <div id="grid9" class="grid-item"></div>
+</div>
+</body>
